@@ -1,0 +1,226 @@
+:root {
+    --root: #f1f5fa;
+
+    --text-alter: #fff;
+    --text-alter-1: #ddd;
+    --text-alter-2: #bbb;
+
+    --text: #000;
+    --text-1: #222;
+    --text-2: #444;
+  
+    --success: #4cd964;
+    --warning: #f1c205;
+    --danger: #bb0000;
+    --info: #1eb8eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #12c2e9 15%, #c471ed 65%, #f64f59 90%);
+    color: var(--text);
+    cursor: default;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#gemstone {
+    display:flex;
+    width:100%;
+    min-height:100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0,0,0,.225);
+}
+
+#card-wrapper {
+    display:flex;
+    flex-direction: column;  
+    background-color: transparent;
+    width:300px;
+    animation: card-in .375s ease-out 0s 1;
+}
+
+@keyframes card-in {
+    from { opacity:0; margin-top: 25px; }
+    to { opacity:1; margin-top:0; }
+}
+
+#card-icon-wrapper {
+    width:75px;
+    height:75px;
+    border-radius: 7px;
+    position:absolute;
+    z-index:1;
+    margin-left:20px;
+    background-color:#007aff;
+    box-shadow:3px 3px 7px rgba(0,0,0,.15);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#card-body {
+    margin-top: 30px;
+    padding: 0 15px 15px 15px;
+    width:100%;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow:4px 7px 5px rgba(0,0,0,.2);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+#card-icon {
+    color:#fff;
+    font-size: 32px;
+}
+
+#card-title {
+    font-size: 36px;
+    color:#000;
+    padding-left:95px;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+#login-button {
+    appearance: none;
+    -webkit-appearance: none;
+    border:0;
+    border-radius: 3px;
+    padding:7px 40px;
+    margin-top:25px;
+    font-size: 24px;
+    color:#fff;
+    background-color: #007aff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    box-shadow: 0 3px 5px rgba(0,0,0,.25);
+}
+
+#loader {
+    background-color:rgba(0,0,0,.25);
+}
+
+#profile-picture {
+    width:75px;
+    height:75px;
+    border-radius: 5px;
+}
+
+#point {
+    font-size: 5.5em;
+    margin: 10px;
+}
+
+#name {
+    text-align: center;
+    color:#777;
+    font-size: 16px;
+}
+
+#loadscreen {
+    display:flex;
+    width:100%;
+    height:100vh;
+    position:fixed;
+    z-index:1000;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,.5);
+}
+
+.loader {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.loader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+  
+.circular {
+    animation: rotate 2s linear infinite;
+    height: 100%;
+    transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.circular-shadow {
+  top:5px !important;
+  left:5px !important;
+  opacity:.25;
+  filter: blur(5px);
+}
+  
+.path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+    stroke: rgb(83, 166, 255);
+}
+
+.path-shadow {
+    stroke: black !important;
+    opacity:.875;
+}
+  
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes dash {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -124px;
+    }
+}
+
+#logout {
+    position:fixed;
+    bottom:15px;
+    right:calc(50% - 40px);
+    background-color:#fff;
+    border-radius: 3px;
+    box-shadow:0 3px 5px rgba(0,0,0,.2);
+    padding:5px 15px;
+    color:#111;
+    font-weight: bold;
+    font-size:16px;
+    animation: card-in .375s ease-out 0s 1;
+    box-shadow: 0 3px 5px rgba(0,0,0,.25);
+    z-index:100;
+}
