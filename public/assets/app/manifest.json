@@ -3,20 +3,20 @@
     "name": "App Name",
     "icons": [
       {
-        "src": "App Image",
+        "src": "../../assets/img/yccX192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "App Image",
+        "src": "../../assets/img/ycc.png",
         "type": "image/png",
-        "sizes": "512x512"
+        "sizes": "800x800"
       }
     ],
     "start_url": "../../",
-    "background_color": "put color here", // Put Color Here
+    "background_color": "#fff",
     "display": "standalone",
     "scope": "../../",
-    "theme_color": "put color here", // Put Color Here
+    "theme_color": "#fff",
     "orientation": "portrait"
   }
