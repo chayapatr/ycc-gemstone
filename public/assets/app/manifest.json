@@ -1,14 +1,14 @@
 {
-    "short_name": "App Name",
-    "name": "App Name",
+    "short_name": "gemstone",
+    "name": "gemstone",
     "icons": [
       {
-        "src": "../../assets/img/yccX192.png",
+        "src": "../../assets/img/w_yccX192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "../../assets/img/ycc.png",
+        "src": "../../assets/img/w_ycc.png",
         "type": "image/png",
         "sizes": "800x800"
       }
