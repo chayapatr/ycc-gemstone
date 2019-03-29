@@ -3,6 +3,7 @@ let cacheName = 'v1',
   'index.html'
 ];
 
+/*
 self.addEventListener('install', evt => {
   evt.waitUntil(
     caches.open(cacheName)
@@ -43,3 +44,4 @@ self.addEventListener('activate', evt => {
     })
   );
 });
+*/
