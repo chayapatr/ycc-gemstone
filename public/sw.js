@@ -2,6 +2,7 @@ let cacheName = 'v1',
     filesToCache = [
   'index.html'
 ];
+
 /*
 self.addEventListener('install', evt => {
   evt.waitUntil(

@@ -110,7 +110,7 @@ class App extends React.Component {
                                             <div id='card-body'>
                                                 <h1 id="card-title">Gemstone</h1>
                                                 <h1 id="point">{this.state.data.point}</h1>
-                                                <h3 id="name">{this.state.auth}</h3>
+                                                <h3 id="name">{this.state.data.name}</h3>
                                             </div>
                                         </div>
                                         <div id="logout" onClick={() => this.logout()}>Logout</div>
