@@ -36,7 +36,7 @@ class App extends React.Component {
             await firestore.collection("gemstone").doc(user.uid).onSnapshot(doc => {
                 let data = doc.data();
                 this.setState({
-                    data: data
+                    data: data,
                 })
             });
             if(this.state.data === undefined){
@@ -110,7 +110,7 @@ class App extends React.Component {
                                             <div id='card-body'>
                                                 <h1 id="card-title">Gemstone</h1>
                                                 <h1 id="point">{this.state.data.point}</h1>
-                                                <h3 id="name">{this.state.data.name}</h3>
+                                                <h3 id="name">{this.state.auth}</h3>
                                             </div>
                                         </div>
                                         <div id="logout" onClick={() => this.logout()}>Logout</div>
